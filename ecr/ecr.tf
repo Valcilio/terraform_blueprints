@@ -1,4 +1,4 @@
-resource "aws_ecr_repository" "zomato_lambda_train" {
+resource "aws_ecr_repository" "ecr_repository" {
   name                 = var.name
   image_tag_mutability = var.mutability
 
