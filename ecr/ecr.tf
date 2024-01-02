@@ -7,3 +7,8 @@ resource "aws_ecr_repository" "ecr_repository" {
   }
   force_delete = var.force_delete
 }
+
+output "ecr_name" {
+  description = "The name of the ECR repository"
+  value       = aws_ecr_repository.ecr_repository.name
+}
