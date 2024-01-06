@@ -16,3 +16,8 @@ resource "aws_iam_policy" "policy" {
 
   policy = jsonencode(var.policy_permissions)
 }
+
+output "policy_arn" {
+  description = "The Policy Created for the Role"
+  value       = aws_iam_policy.policy.arn
+}

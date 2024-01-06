@@ -14,3 +14,8 @@ resource "aws_lambda_function_url" "url" {
   function_name      = aws_lambda_function.lambda.function_name
   authorization_type = var.authorization_type
 }
+
+output "lambda_function_arn" {
+  description = "The Name of the Lambda Function Created"
+  value       = aws_lambda_function.lambda.arn
+}
