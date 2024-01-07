@@ -8,3 +8,8 @@ resource "aws_iam_policy_attachment" "attach_ec2_policy" {
   roles      = [aws_iam_role.role.name]
   policy_arn = aws_iam_policy.policy.arn
 }
+
+output "role_arn" {
+  description = "The Role Created"
+  value       = aws_iam_role.role.arn
+}

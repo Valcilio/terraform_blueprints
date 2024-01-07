@@ -15,8 +15,8 @@ variable "policy_permissions" {
 
 variable "policy_description" {
   description = "The description of the policy"
-  type = string
-  default = "No description inputted"
+  type        = string
+  default     = "No description inputted"
 }
 
 variable "assume_role_type" {
