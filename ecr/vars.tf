@@ -1,8 +1,3 @@
-variable "aws_region" {
-  description = "The AWS region where the app will be deployed."
-  type        = string
-}
-
 variable "name" {
   description = "The name of the repository"
   type        = string

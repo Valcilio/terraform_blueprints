@@ -3,16 +3,6 @@ variable "name" {
   type        = string
 }
 
-variable "aws_region" {
-  description = "The AWS region"
-  type        = string
-}
-
-variable "aws_account_id" {
-  description = "The Account ID from the AWS"
-  type        = string
-}
-
 variable "role_arn" {
   description = "The ARN of the lambda function's role"
   type        = string
@@ -20,6 +10,16 @@ variable "role_arn" {
 
 variable "ecr_repository_name" {
   description = "The name of the ECR repository containing the docker image"
+  type        = string
+}
+
+variable "aws_region" {
+  description = "The AWS region"
+  type        = string
+}
+
+variable "aws_account_id" {
+  description = "The Account ID from the AWS"
   type        = string
 }
 
