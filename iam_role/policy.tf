@@ -14,7 +14,7 @@ resource "aws_iam_policy" "policy" {
   path        = "/"
   description = "Default policy for the role ${var.role_name}"
 
-  policy = jsonencode(var.policy_permissions)
+  policy = var.policy_permissions
 }
 
 output "policy_arn" {

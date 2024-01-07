@@ -10,7 +10,7 @@ variable "roles_name" {
 
 variable "policy_permissions" {
   description = "The permissions of the policy created"
-  type        = map(any)
+  type        = string
 }
 
 variable "policy_description" {

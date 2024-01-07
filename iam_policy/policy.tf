@@ -14,7 +14,7 @@ resource "aws_iam_policy" "policy" {
   path        = "/"
   description = var.policy_description
 
-  policy = jsonencode(var.policy_permissions)
+  policy = var.policy_permissions
 }
 
 output "policy_arn" {

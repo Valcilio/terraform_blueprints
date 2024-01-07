@@ -5,7 +5,7 @@ variable "role_name" {
 
 variable "policy_permissions" {
   description = "The permissions of the default policy of the role created"
-  type        = map(any)
+  type        = string
 }
 
 variable "assume_role_type" {
