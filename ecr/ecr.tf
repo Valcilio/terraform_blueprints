@@ -8,7 +8,7 @@ resource "aws_ecr_repository" "ecr_repository" {
   force_delete = var.force_delete
 }
 
-output "ecr_name" {
+output "ecr_arn" {
   description = "The ARN of the ECR repository"
   value       = aws_ecr_repository.ecr_repository.arn
 }
